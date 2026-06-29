@@ -29,7 +29,7 @@ jobs:
 
       - name: Build
         run: npm run build
-        # Этот шаг создаст папку dist с правильными путями (как у тебя на скриншоте)
+        # ЭТА СТРОКА СОЗДАЕТ ПАПКУ DIST С ПРАВИЛЬНЫМИ ПУТЯМИ
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # <--- ЭТО САМОЕ ВАЖНОЕ: указываем путь к папке dist
+          path: ./dist  # <--- ВОТ ЗДЕСЬ ГЛАВНОЕ: указываем путь к папке dist
 
       - name: Deploy
         uses: actions/deploy-pages@v3
